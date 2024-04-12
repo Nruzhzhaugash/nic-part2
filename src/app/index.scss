@@ -1,8 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "./style/variables";
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
 }
+
+
