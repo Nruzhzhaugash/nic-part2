@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@egjs/react-flicking": "^4.11.2",
     "@types/node": "^20.12.7",
     "axios": "^1.6.8",
     "classnames": "^2.5.1",
