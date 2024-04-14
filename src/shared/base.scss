@@ -1,0 +1,87 @@
+@import "./fonts.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./variables";
+@import "./breakpoints.scss";
+
+body {
+  background: #fff;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: ClashDisplay;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--blue-600);
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  border: none;
+  background: none;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input {
+  padding: 0;
+}
+
+.preloader {
+  flex-grow: 1;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

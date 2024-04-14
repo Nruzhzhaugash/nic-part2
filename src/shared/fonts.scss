@@ -1,0 +1,65 @@
+/* Для обычного (normal) шрифта */
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("../../public/fonts/ClashDisplayExtralight.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Для шрифта с полужирным (bold) начертанием */
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("../../public/fonts/ClashDisplayMedium.otf") format("opentype");
+  font-weight: 500; /* Меняем только эту строку */
+  font-style: normal;
+}
+
+/* Для шрифта с уменьшенной толщиной (light) */
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("../../public/fonts/ClashDisplayLight.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Для любого другого веса шрифта, который может быть у вас */
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("../../public/fonts/ClashDisplayRegular.otf") format("opentype");
+  font-weight: 400; /* Например, задаем вес 600 */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("../../public/fonts/ClashDisplayRegular.otf") format("opentype");
+  font-weight: 600; /* Например, задаем вес 600 */
+  font-style: normal;
+}
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("../../public/fonts/ClashDisplaySemibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+// Source Sans Pro
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../../public/fonts/SourceSansPro-Regular.otf") format("opentype");
+  font-weight: 400; /* Например, задаем вес 600 */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../../public/fonts/") format("opentype");
+  font-weight: 500; /* Например, задаем вес 600 */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../../public/fonts/SourceSansPro-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}

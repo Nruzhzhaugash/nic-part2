@@ -1,8 +1,13 @@
+import HomePage from "@/pages/Home/ui/Home";
+import { Route, Routes } from "react-router-dom";
+
 const App = () => {
     return (
-        <div className="text-3xl text-red-700">
-            Hello world
-        </div>
+        <Routes>
+            <Route index element={<HomePage />} />
+            <Route path="/signin" element={''} />
+            <Route path="/signup" element={''} />
+        </Routes>
     );
 };
 
