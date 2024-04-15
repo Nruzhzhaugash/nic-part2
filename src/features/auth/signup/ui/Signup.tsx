@@ -55,7 +55,7 @@ export const Signup = () => {
       <div className="px-[86px] w-full">
         <form
           onSubmit={handleSubmit}
-          className="w-full py-[42px] px-6 border-[1px] border-solid border-black"
+          className="w-full rounded-[10px] py-[42px] px-6 border-[1px] border-solid border-black"
         >
           <h1 className="text-darkblue text-[36px] font-medium mb-11">
             Registration
