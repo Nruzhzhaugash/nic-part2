@@ -11,9 +11,11 @@ import { Reviews } from "@/widgets/Reviews/ui/Reviews";
 import { Vacancies } from "@/widgets/Vacancies/ui/vacancies";
 import { VacanciesList } from "@/widgets/VacanciesList/ui/VacanciesList";
 import { data } from "@/shared/libs/data";
+import { ViewportSlot } from "@egjs/react-flicking";
+import { JobAlerts } from "@/widgets/JobAlerts/ui/JobAlerts";
 
 export default function HomePage() {
-  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const [currentIndex, setCurrentIndex] = useState<number>(1);
 
   const handleNextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
@@ -72,7 +74,7 @@ export default function HomePage() {
           <h1 className="text-primary font-semibold text-[40px] leading-[50px]">
             Check Out User Reviews About Our Platform!
           </h1>
-          <div className="flex gap-[60px] items-center">
+          <ViewportSlot>
             <Button
               onClick={() => handlePrevSlide()}
               className="p-2 border-[2px] border-solid border-primary rounded-full "
@@ -85,9 +87,19 @@ export default function HomePage() {
             >
               <CarouselRight />
             </Button>
-          </div>
+          </ViewportSlot>
         </div>
         <Reviews currentIndex={currentIndex} data={data} />
+      </section>
+      <section className="mb-[90px]">
+        <div className="flex items-center gap-[120px]">
+          <div className="left">
+            <h1 className="text-primary text-5xl font-semibold mb-5">Sign up for job alerts</h1>
+            <h2 className="text-darkblue underline text-[28px] mb-11">Get job alerts straight to your inbox.</h2>
+            <p className="text-xl text-darkblue">Enter your email to get started. You will be able to unsubscribe at any time.</p>
+          </div>
+          <JobAlerts />
+        </div>
       </section>
     </main>
   );

@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "custom": ["Source Sans Pro"]
+        "custom": ["Source Sans Pro"],
+        "jua": ["Jua"]
       },
       colors: {
         white: '#fff',
