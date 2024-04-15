@@ -1,0 +1,1 @@
+export const BASE_URL = 'https://hh.up.railway.app/api/v1'
